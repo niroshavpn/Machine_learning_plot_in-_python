@@ -6,8 +6,8 @@ plt.rcParams['figure.figsize'] = (10.0, 8.0)
 import seaborn as sns
 from scipy import stats
 from scipy.stats import norm
-train = pd.read_csv("/Users/suresh/Documents/NIROSHA/Python-ML-projects/train.csv")
-test = pd.read_csv("/Users/suresh/Documents/NIROSHA/Python-ML-projects/test.csv")
+train = pd.read_csv("data/train.csv")
+test = pd.read_csv("data/test.csv")
 miss = train.isnull().sum()/len(train)
 
 miss = miss.to_frame()
